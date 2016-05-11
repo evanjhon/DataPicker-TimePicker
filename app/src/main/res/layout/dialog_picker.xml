@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_picker_all"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:background="@drawable/ll_radius"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_selecter_top"
+            android:src="@drawable/img_add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView style="@style/separator_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <EditText
+                    android:id="@+id/ed_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:textColor="@color/textColor"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView style="@style/separator_line" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_minus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_selecter_bottom"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_minus" />
+    </LinearLayout>
+
+
+</LinearLayout>
