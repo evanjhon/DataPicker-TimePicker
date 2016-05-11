@@ -41,7 +41,6 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
 
-
         <smalltown.com.datatimepicker.MyDatePickerDia
             android:id="@+id/date_day"
             android:layout_width="wrap_content"
